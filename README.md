@@ -6,7 +6,7 @@ The project showcases communication between a web interface, a Python backend, a
 
 ---
 
-## Features
+## ✨Features
 * Interactive web-based user interface
 * Displays digits **0–9** on the Arduino Uno Q LED matrix
 * Real-time communication between the browser and the Arduino
@@ -16,7 +16,7 @@ The project showcases communication between a web interface, a Python backend, a
 
 ---
 
-# Project Structure
+## 🏗️Project Structure
 
 ```text
 Project/
@@ -34,14 +34,14 @@ Project/
 
 ---
 
-# System Architecture
+## 🔄System Architecture
 
 ```text
 User Browser (HTML/CSS/JS) → app.js → WebUI Message ("display_digit") → Python Backend (main.py) → Bridge.provide() → Arduino Router Bridge → Arduino Sketch (sketch.ino) → Arduino Uno Q LED Matrix
 ```
 ---
 
-# How It Works
+## ⚙️How It Works
 1. The user opens the web application.
 2. A single digit (0–9) is entered into the input box.
 3. Clicking **Display Digit** sends the digit to the Python backend using WebUI.
@@ -53,7 +53,7 @@ User Browser (HTML/CSS/JS) → app.js → WebUI Message ("display_digit") → Py
 
 ---
 
-# Components
+## 📁 omponents
 
 ## Frontend
 
@@ -168,7 +168,7 @@ The web interface displays useful information, including:
 
 ---
 
-# Future Improvements
+## 📌Future Improvements
 Possible enhancements include:
 * Draw digits using a canvas instead of numeric input
 * AI-based handwritten digit recognition (MNIST)
@@ -194,5 +194,5 @@ This project demonstrates:
 
 ---
 
-# License
+# 📜License
 This project is intended for educational and learning purposes. Feel free to modify and extend it for your own experiments with the Arduino Uno Q platform.
