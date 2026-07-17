@@ -223,6 +223,4 @@ This project demonstrates:
 
 ---
 
-# 📜License
-
-This project is intended for educational and learning purposes. Feel free to modify and extend it for your own experiments with the Arduino Uno Q platform.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
