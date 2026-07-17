@@ -209,22 +209,6 @@ Arduino LED Matrix
 ```
 ---
 
-# 📌 Future Improvements
-
-Possible enhancements include:
-
-* Draw digits using a canvas instead of numeric input
-* AI-based handwritten digit recognition (MNIST)
-* Display confidence score of predictions
-* Animation effects on the LED matrix
-* Custom LED brightness control
-* Digit history
-* Mobile-friendly interface
-* Additional symbols and characters
-* Automatic clearing after a timeout
-
----
-
 # Learning Outcomes
 
 This project demonstrates:
