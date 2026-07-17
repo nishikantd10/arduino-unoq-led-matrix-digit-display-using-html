@@ -53,7 +53,7 @@ User Browser (HTML/CSS/JS) → app.js → WebUI Message ("display_digit") → Py
 
 ---
 
-## 📁 omponents
+## 📁 Components
 
 ## Frontend
 
