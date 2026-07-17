@@ -57,14 +57,14 @@ Project/
                   ▼
               app.js
                   │
-         WebUI Message
-        ("display_digit")
+            WebUI Message
+          ("display_digit")
                   │
                   ▼
              Python Backend
               (main.py)
                   │
-         Bridge.provide()
+          Bridge.provide()
                   │
                   ▼
          Arduino Router Bridge
@@ -171,7 +171,7 @@ Contains predefined bitmap arrays for:
 
 ---
 
-# Technologies Used
+# 🛠️Technologies Used
 
 * Arduino Uno Q
 * Arduino App Framework
@@ -186,7 +186,7 @@ Contains predefined bitmap arrays for:
 
 ---
 
-# Communication Flow
+# 🔀Communication Flow
 
 ```text
 User enters a digit
@@ -211,25 +211,11 @@ Bridge.provide("get_digit")
         ▼
     sketch.ino
         │
-Loads bitmap
+  Loads bitmap
         │
         ▼
 Arduino LED Matrix
 ```
----
-
-# Learning Outcomes
-
-This project demonstrates:
-
-* Web-to-hardware communication
-* Browser-based control of embedded devices
-* Python–Arduino integration
-* Event-driven programming
-* Client-server communication using WebUI
-* Use of the Arduino Bridge API
-* LED matrix graphics programming
-
 ---
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
