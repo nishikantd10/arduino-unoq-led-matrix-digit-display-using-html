@@ -87,7 +87,7 @@ Project/
 
 ## Frontend
 
-### `index.html`
+### [`index.html`](index.html)
 
 Provides the graphical user interface containing:
 
@@ -100,7 +100,7 @@ Provides the graphical user interface containing:
 
 Defines the appearance of the application using a modern dark theme with responsive layout and styled controls.
 
-### `app.js`
+### [`app.js`](app.js)
 
 Handles:
 
@@ -115,7 +115,7 @@ Handles:
 
 ## Backend
 
-### `main.py`
+### [`main.py`](main.py)
 
 The Python backend performs the following tasks:
 
@@ -130,7 +130,7 @@ The Python backend performs the following tasks:
 
 ## Arduino Firmware
 
-### `sketch.ino`
+### [`sketch.ino`](sketch.ino)
 
 The Arduino program:
 
@@ -144,7 +144,7 @@ The Arduino program:
 
 ## LED Matrix Patterns
 
-### `digits.h`
+### [`digits.h`](digits.h)
 
 Contains predefined bitmap arrays for:
 
