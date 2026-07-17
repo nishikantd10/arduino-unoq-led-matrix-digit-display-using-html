@@ -19,6 +19,21 @@ The project showcases communication between a web interface, a Python backend, a
 
 ---
 
+## 📸 Demo
+
+### Web Interface
+
+```text
+![Webpage screenshot](screenshots/webpage.png)
+```
+
+### LED Matrix Output
+
+```text
+![Output screenshot](screenshots/ledmatrix.jpg)
+```
+---
+
 # 🏗️Project Structure
 
 ```text
