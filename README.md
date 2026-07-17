@@ -178,8 +178,8 @@ Contains predefined bitmap arrays for:
 * Arduino Router Bridge
 * Arduino LED Matrix Library
 * Python
-* HTML5
-* CSS3
+* HTML
+* CSS
 * JavaScript
 * WebUI
 * Socket.IO
