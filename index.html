@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digit Display</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Arduino Uno Q</h1>
+    <h2>LED Matrix Digit Display</h2>
+    <input type="number" id="digitInput" min="0" max="9" placeholder="0-9">
+    <button id="sendBtn">
+      Display Digit
+    </button>
+    <p id="status">
+      Waiting for input...
+    </p>
+  </div>
+  <script src="libs/socket.io.min.js"></script>
+  <script src="libs/arduino.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
