@@ -1,12 +1,15 @@
-# Arduino Uno Q – LED Matrix Digit Display using HTML
+# Arduino Uno Q – LED Matrix Digit Display
 
 ## Overview
+
 The **Arduino Uno Q – LED Matrix Digit Display** project demonstrates how to build an interactive web application that controls the built-in LED matrix of the Arduino Uno Q. Users can enter a digit (0–9) through a browser-based interface, and the selected digit is displayed on the LED matrix in real time.
+
 The project showcases communication between a web interface, a Python backend, and the Arduino board using the Arduino App framework.
 
 ---
 
-## ✨Features
+# ✨Features
+
 * Interactive web-based user interface
 * Displays digits **0–9** on the Arduino Uno Q LED matrix
 * Real-time communication between the browser and the Arduino
@@ -16,7 +19,7 @@ The project showcases communication between a web interface, a Python backend, a
 
 ---
 
-## 🏗️Project Structure
+# 🏗️Project Structure
 
 ```text
 Project/
@@ -34,14 +37,41 @@ Project/
 
 ---
 
-## 🔄System Architecture
+# 🔄System Architecture
 
 ```text
-User Browser (HTML/CSS/JS) → app.js → WebUI Message ("display_digit") → Python Backend (main.py) → Bridge.provide() → Arduino Router Bridge → Arduino Sketch (sketch.ino) → Arduino Uno Q LED Matrix
+                 User
+                  │
+                  ▼
+        Browser (HTML/CSS/JS)
+                  │
+                  ▼
+              app.js
+                  │
+         WebUI Message
+        ("display_digit")
+                  │
+                  ▼
+             Python Backend
+              (main.py)
+                  │
+         Bridge.provide()
+                  │
+                  ▼
+         Arduino Router Bridge
+                  │
+                  ▼
+           Arduino Sketch
+            (sketch.ino)
+                  │
+                  ▼
+         Arduino Uno Q LED Matrix
 ```
+
 ---
 
-## ⚙️How It Works
+# ⚙️How It Works
+
 1. The user opens the web application.
 2. A single digit (0–9) is entered into the input box.
 3. Clicking **Display Digit** sends the digit to the Python backend using WebUI.
@@ -53,11 +83,12 @@ User Browser (HTML/CSS/JS) → app.js → WebUI Message ("display_digit") → Py
 
 ---
 
-## 📁 Components
+# 📁Components
 
 ## Frontend
 
 ### `index.html`
+
 Provides the graphical user interface containing:
 
 * Title
@@ -66,9 +97,11 @@ Provides the graphical user interface containing:
 * Status indicator
 
 ### `style.css`
+
 Defines the appearance of the application using a modern dark theme with responsive layout and styled controls.
 
 ### `app.js`
+
 Handles:
 
 * WebUI connection
@@ -83,6 +116,7 @@ Handles:
 ## Backend
 
 ### `main.py`
+
 The Python backend performs the following tasks:
 
 * Creates the WebUI server
@@ -97,6 +131,7 @@ The Python backend performs the following tasks:
 ## Arduino Firmware
 
 ### `sketch.ino`
+
 The Arduino program:
 
 * Initializes the LED matrix
@@ -110,6 +145,7 @@ The Arduino program:
 ## LED Matrix Patterns
 
 ### `digits.h`
+
 Contains predefined bitmap arrays for:
 
 * Digit 0
@@ -127,13 +163,14 @@ Contains predefined bitmap arrays for:
 ---
 
 # Technologies Used
+
 * Arduino Uno Q
 * Arduino App Framework
 * Arduino Router Bridge
 * Arduino LED Matrix Library
 * Python
-* HTML
-* CSS
+* HTML5
+* CSS3
 * JavaScript
 * WebUI
 * Socket.IO
@@ -143,33 +180,39 @@ Contains predefined bitmap arrays for:
 # Communication Flow
 
 ```text
-User enters a digit → index.html → app.js → display_digit message → main.py → Stores current digit → Bridge.provide("get_digit") → sketch.ino → Loads bitmap → Arduino LED Matrix
+User enters a digit
+        │
+        ▼
+    index.html
+        │
+        ▼
+      app.js
+        │
+        ▼
+display_digit message
+        │
+        ▼
+     main.py
+        │
+Stores current digit
+        │
+        ▼
+Bridge.provide("get_digit")
+        │
+        ▼
+    sketch.ino
+        │
+Loads bitmap
+        │
+        ▼
+Arduino LED Matrix
 ```
 ---
 
-# Input Validation
-The application accepts only digits between **0** and **9**.
+# 📌 Future Improvements
 
-If an invalid value is entered:
-
-* The webpage displays an error message.
-* The previous valid digit remains unchanged.
-
----
-
-# Status Messages
-The web interface displays useful information, including:
-* Waiting for input...
-* Connected
-* Disconnected
-* Displaying digit X
-* Invalid input
-* Enter a digit between 0 and 9
-
----
-
-## 📌Future Improvements
 Possible enhancements include:
+
 * Draw digits using a canvas instead of numeric input
 * AI-based handwritten digit recognition (MNIST)
 * Display confidence score of predictions
@@ -183,7 +226,9 @@ Possible enhancements include:
 ---
 
 # Learning Outcomes
+
 This project demonstrates:
+
 * Web-to-hardware communication
 * Browser-based control of embedded devices
 * Python–Arduino integration
@@ -195,4 +240,5 @@ This project demonstrates:
 ---
 
 # 📜License
+
 This project is intended for educational and learning purposes. Feel free to modify and extend it for your own experiments with the Arduino Uno Q platform.
